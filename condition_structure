@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+  <head>
+    <title> If e Else </title>
+  </head>
+  
+  
+
+<script>
+
+  var idade = parseInt(prompt("Digite a tua idade: "));
+  
+  if (idade >= 18) {
+    document.write("Parabéns! Você é maior de idade, logo poderá seguir com esta matrícula. Seja bem-vindo(a). ");  
+  } else {
+    document.write("Sentimos muito. Você é menor de idade, logo não poderá seguir com esta matrícula. Tente novamente em um momento mais oportuno. ");
+  }
+  
+</script>
