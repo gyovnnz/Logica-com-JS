@@ -1,19 +1,43 @@
 <meta charset="UTF-8">
 
   <head>
-    <title> If e Else </title>
+    <title> Estruturas Condicionais: o que são? </title>
   </head>
   
+  <body>
+    <p> Uma estrutura condicional pode ser definida como um caminho a ser tomado caso 'x' coisa ocorra ou não ocorra. Por exemplo: eu só irei ao shopping se estiver de 
+    noite e não estiver chovendo. Logo; se estiver de noite mas estiver chovendo, ficarei em casa. Assim como se estiver de dia mas não estiver chovendo,
+    ainda sim ficarei em casa. Porém, se estiver de noite e não estiver chovendo, ai sim irei ao shopping. <br>
+    Pode parecer um pouco confuso por agora, então vamos simplificar as coisas com alguns bons exemplos em JavasScript: </p>
+  </body>
   
 
 <script>
 
-  var idade = parseInt(prompt("Digite a tua idade: "));
+  var idade = parseInt(prompt("Digite a tua idade: ")); /* Prompt é a forma como nos comunicamos com o usuário. Através dele podemos pedir ou perguntar algo e o usuário 
+  devolve. */
   
-  if (idade >= 18) {
-    document.write("Parabéns! Você é maior de idade, logo poderá seguir com esta matrícula. Seja bem-vindo(a). ");  
+  if (idade >= 18) { 
+    document.write("Você é maior de idade. ");  
   } else {
-    document.write("Sentimos muito. Você é menor de idade, logo não poderá seguir com esta matrícula. Tente novamente em um momento mais oportuno. ");
-  }
+    document.write("Você é menor de idade.");
+  } /* If e Else então, são as nossas estruturas condicionais. O que fizemos foi basicamente dizer que: se a idade for maior ou igual a 18, imprima "Você é maior de 
+  idade". Se não, imprima "Você é menor de idade". Simples, não? */
   
+  /* Também temos uma outra forma. O: Else If. 
+  Podemos utilizá-lo caso a ação que queremos cumprir tenha 2+ condições.
+  Por exemplo: */
+  
+  var idade = parseInt(prompt("Digite a tua idade: ")); 
+  
+  if (idade < 12) {
+    document.write("Você é uma criança.");
+  } else if (idade > 12 && idade < 18) {
+    document.write("Você é um adolescente."); 
+  } else {
+    document.write("Você é um adulto."); 
+  } /* O que fizemos aqui então foi dizer que: se a idade for menor que 12, imprima "Você é uma criança". Se não, e se a idade for maior que 12 e menor que 18, imprima
+  "Você é um adolescente". E por fim, se não for o caso de nenhum dos dois acima (nos restando apenas a opção da idade ser maior que 18) imprima então "Você é um 
+  adulto". 
+  Bem interessante, né? */
 </script>
