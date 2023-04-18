@@ -15,6 +15,7 @@
   
   while (anoCopa <= limite) {
     document.write("Teve copa em: " + anoCopa);
+    document.write("<br>");
     anoCopa = anoCopa + 4;
   } /* O que fizemos aqui então foi declarar uma variavél como sendo a data limite a qual desejamos que o anoCopa seja imprimido e adicionamos o prompt para deixar
   essa escolha livre para o usuário. Depois utilizamos o while para criar um loop, dizendo que: enquanto anoCopa for maior ou igual à data limite que escolhemos, 
@@ -23,10 +24,12 @@
   
   /* Agora vejamos um exemplo do For: */
   
-  var numeroEscolhido = parseInt(prompt("Escolha um número para realizar a tabuada ");
+  document.write("<br>");
+  var numeroEscolhido = parseInt(prompt("Escolha um número para realizar a tabuada "));
   
-  for (var multiplicador = 1, multiplicador <= 10; multiplicador++) { /* multiplicador++ é o mesmo que: multiplicador = multiplicador +1; */
-    document.write(numeroEscolhido * multiplicador); /* O que fizemos aqui foi pedir para o usuário escolher um número e realizamos a tabuada do mesmo seguindo a mesma
+  for (var multiplicador = 1; multiplicador <= 10; multiplicador++) { /* multiplicador++ é o mesmo que: multiplicador = multiplicador +1; */
+    document.write(numeroEscolhido * multiplicador); 
+    document.write("<br>");
+  } /* O que fizemos aqui foi pedir para o usuário escolher um número e realizamos a tabuada do mesmo seguindo a mesma
     estrutura do while (valor inicial, valor limite e o "multiplicador++" realizando a atribuição do número à variavél) */
-  }
 </script>
