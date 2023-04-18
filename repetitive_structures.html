@@ -5,17 +5,28 @@
   </head>
 
   <body>
-    <p> Estruturas de repetição são basicamente loops que se repetem de acordo com alguma condição que impomos. Existem duas delas, sendo: for e while. </br>
+    <p> Estruturas de repetição são basicamente loops que se repetem de acordo com alguma condição que impomos. Existem duas delas, sendo: For e While. </br>
     Agora vamos aos exemplos: </p>
   </body>
 
 <script>
   var limite = parseInt(prompt("Informe a data limite");
-  var anoCopa = 1930;
+  var anoCopa = 1930; /* Data inicial. */
   
   while (anoCopa <= limite) {
     document.write("Teve copa em: " + anoCopa);
     anoCopa = anoCopa + 4;
-                        
-   
+  } /* O que fizemos aqui então foi declarar uma variavél como sendo a data limite a qual desejamos que o anoCopa seja imprimido e adicionamos o prompt para deixar
+  essa escolha livre para o usuário. Depois utilizamos o while para criar um loop, dizendo que: enquanto anoCopa for maior ou igual à data limite que escolhemos, 
+  imprima "Teve copa em: " e o ano respectivo da copa. Assim, quando a data limite for atingida, o while irá parar.
+  E por último, mas não menos importante, atribuímos o + 4 à variavél para ir pulando essas datas de 4 em 4 anos (que é quando ocorre o evento). */ 
+  
+  /* Agora vejamos um exemplo do For: */
+  
+  var numeroEscolhido = parseInt(prompt("Escolha um número para realizar a tabuada ");
+  
+  for (var multiplicador = 1, multiplicador <= 10; multiplicador++) { /* multiplicador++ é o mesmo que: multiplicador = multiplicador +1; */
+    document.write(numeroEscolhido * multiplicador); /* O que fizemos aqui foi pedir para o usuário escolher um número e realizamos a tabuada do mesmo seguindo a mesma
+    estrutura do while (valor inicial, valor limite e o "multiplicador++" realizando a atribuição do número à variavél) */
+  }
 </script>
